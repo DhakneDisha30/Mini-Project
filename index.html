@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav">
+            <img src="img/vds-logo.png" class="brand-logo" alt="logo">
+            <p>PARIDHAN MENS WEAR</p>
+            
+            <div class="nav-items">
+                
+                <li class="link-item">
+             <a href="login.html" class="link">
+                        <img src="img/user.png" alt="User">
+                        
+                    </a>
+                </li>
+                
+                
+            </div>
+        </div>
+        <ul class="links-container">
+            <li class="link-item"><a href="index1.html" class="link">Home</a></li>
+           
+            <li class="link-item"><a href="product.html" class="link">Men</a></li>
+            <li class="link-item"><a href="contact.html" class="link">Contact</a></li>
+            
+           
+        </ul>
+        </nav>
+        <style>
+            .slider {
+              width: 100%;
+              height: 400px; /* Adjust the height as needed */
+              overflow: hidden;
+              position: relative;
+            }
+            
+            .slide {
+              width: 100%;
+              height: 100%;
+              display: none;
+              position: absolute;
+            }
+            
+            .slide.active {
+              display: block;
+            }
+            
+            .slide img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            
+            .prev, .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              color: white;
+              font-size: 30px;
+              padding: 10px;
+              background-color: rgba(0, 0, 0, 0.5);
+              border: none;
+              z-index: 2;
+            }
+            
+            .prev {
+              left: 10px;
+            }
+            
+            .next {
+              right: 10px;
+            }
+          </style>
+       
+        <body>
+        
+        <div class="slider">
+          <div class="slide active">
+            <img src="img/mens1.jpg" alt="Slide 1">
+          </div>
+          <div class="slide">
+            <img src="img/mens.jpg" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="img/background.jpg" alt="Slide 3">
+          </div>
+          <!-- Add more slides as needed -->
+          
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        
+        <script>
+          let slideIndex = 0;
+          const slides = document.querySelectorAll('.slide');
+          
+          function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+              slides[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+              slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds (adjust as needed)
+          }
+          
+          function prevSlide() {
+            slideIndex--;
+            if (slideIndex < 1) {
+              slideIndex = slides.length;
+            }
+            showSlides();
+          }
+          
+          function nextSlide() {
+            slideIndex++;
+            if (slideIndex > slides.length) {
+              slideIndex = 1;
+            }
+            showSlides();
+          }
+          
+          showSlides();
+        </script>
+        <section class="product">
+            <h2 class="product-category">best selling</h2>
+            <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt1.jpg" class="product-thumb" alt="">
+                   
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">a short line about the cloth..</p>
+                    <span class="price">Rs400</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt2.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">a short line about the cloth..</p>
+                    <span class="price">Rs200</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                   
+                    <img src="img/tshirt3.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">a short line about the cloth..</p>
+                    <span class="price">Rs300</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt5.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">a short line about the cloth..</p>
+                    <span class="price">Rs200</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt6.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">a short line about the cloth..</p>
+                    <span class="price">Rs400</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt4.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">a short line about the cloth..</p>
+                    <span class="price">Rs300</span>
+                </div>
+            </div>
+        </div>
+        
+        </section>
+       
+        <section class="product">
+            <h2 class="product-category">OUR COLLECTION</h2>
+            <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt7.jpg" class="product-thumb" alt="">
+                   
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">Shirt</p>
+                    <span class="price">Rs400</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt8.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">Shirt</p>
+                    <span class="price">Rs200</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                   
+                    <img src="img/tshirt3.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">Shirt</p>
+                    <span class="price">Rs300</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt5.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">Shirt</p>
+                    <span class="price">Rs200</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt6.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">Shirt</p>
+                    <span class="price">Rs400</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/tshirt4.jpg" class="product-thumb" alt="">
+                    
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">Shirt</p>
+                    <span class="price">Rs300</span>
+                </div>
+            </div>
+        </div>
+        
+        </section>
+        <section class="collection-container">
+            <a href="#" class="collection">
+                <img src="img/product_14.png" alt="">
+                <p class="collection-title">Shirts</p>
+            </a>
+            <a href="#" class="collection">
+                <img src="img/pants.avif" alt="">
+                <p class="collection-title">Pants</p>
+            </a>
+            <a href="#" class="collection">
+                <img src="img/header.png" alt="">
+                <p class="collection-title">Products</p>
+            </a>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <img src="img/vds-logo.png" class="logo" alt="logo">
+               
+                
+            </div>
+            <p class="info">Address:Paridhan Mens Wear,Juni Peth,Shukleshwar Chauk,Rahuri,413705</p>
+            <p class="info">support emails - daulenit125@gmail</p>
+            <p class="info">contact:86573-37777</p>
+    <div class="footer-social-container">
+       
+        <div>
+            <a href="mailto:daulenit125@gmail"><img src="img/mail_icon.png" alt="email"></a>
+            <a href="https://www.instagram.com/daule.ni_7777"><img src="img/instagram_icon.jpg" alt="instagram"></a>
+            <a href="https://wa.me/8657337777" target="_blank" rel="noopener noreferrer"><img src="img/whatsapp_icon.png" alt="WhatsApp"></a>
+
+        </div>
+    </div>
+    <p class="footer-credit">Paridhan Mens Store</p>
+        </footer>
+        <script src="js/nav.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/footer.js"></script>
+</body>
+</html>
