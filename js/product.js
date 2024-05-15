@@ -53,63 +53,63 @@ let products = [
     },
     {
         id: 7,
-        name: 'Collar T-shirt',
+        name: 'shirt',
         image: 'tshirt10.jpg',
         price: 350
     },
     {
         id: 8,
-        name: 'Collar T-shirt',
+        name: 'shirt',
         image: 'tshirt11.jpg',
         price: 550
     },
     {
         id: 9,
-        name: 'Collar T-shirt',
+        name: 'Jacket',
         image: 'product_13.png',
         price: 600
     },
     {
         id: 10,
-        name: 'Collar T-shirt',
+        name: 'Jacket',
         image: 'product_14.png',
         price: 200
     },
     {
         
             id: 11,
-            name: 'Collar T-shirt',
+            name: 'Jackett',
             image: 'product_15.png',
             price: 300
     
     },
     {
         id: 12,
-        name: 'Collar T-shirt',
+        name: 'Jacket',
         image: 'product_16.png',
         price: 400
     },
     {
         id: 13,
-        name: 'Collar T-shirt',
+        name: 'Denim Jacket',
         image: 'product_17.png',
         price: 500
     },
     {
         id: 14,
-        name: 'Collar T-shirt',
+        name: 'Jacket',
         image: 'product_18.png',
         price: 600
     },
     {
         id: 15,
-        name: 'Collar T-shirt',
+        name: 'Jacket',
         image: 'product_19.png',
         price: 550
     },
     {
         id: 16,
-        name: 'Collar T-shirt',
+        name: 'Jacket',
         image: 'product_20.png',
         price: 700
     },
@@ -121,19 +121,19 @@ let products = [
     },
     {
         id: 18,
-        name: 'Collar T-shirt',
+        name: 'Jacket',
         image: 'product_22.png',
         price: 500
     },
     {
         id: 19,
-        name: 'Collar T-shirt',
+        name: 'Hoddie',
         image: 'product_23.png',
         price: 600
     },
     {
         id: 20,
-        name: 'Collar T-shirt',
+        name: 'Jacket',
         image: 'product_24.png',
         price: 800
     }
