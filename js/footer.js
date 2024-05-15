@@ -13,7 +13,7 @@ const createFooter = () => {
         
         <div>
         <a href="mailto:daulenit125@gmail"><img src="img/mail_icon.jpg" alt="email"></a>
-        <a href="https://www.instagram.com/daule.ni_7777"><img src="img/instagram_icon.png" alt="instagram"></a>
+        <a href="https://www.instagram.com/daule.ni3_7777"><img src="img/instagram_icon.png" alt="instagram"></a>
             
             <a href="https://wa.me/8657337777" target="_blank" rel="noopener noreferrer"><img src="img/whatsapp_icon.png" alt="WhatsApp"></a>
         </div>
